@@ -56,11 +56,13 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - SVProgressHUD (2.2.5)
+  - Toast (4.0.0)
 
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - SVProgressHUD
+  - Toast
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -74,6 +76,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - SVProgressHUD
+    - Toast
 
 SPEC CHECKSUMS:
   Firebase: 6df9a6114bc9f106a98fe83d5438d4d9833c2019
@@ -86,7 +89,8 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: bc38fd97916b117de46200f81a45d666a37a2f86
+PODFILE CHECKSUM: 6bc70516725b6c4b11700700eb276dc3d50401b4
 
 COCOAPODS: 1.5.3

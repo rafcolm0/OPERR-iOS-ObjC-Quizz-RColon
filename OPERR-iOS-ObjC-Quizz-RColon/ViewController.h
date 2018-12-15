@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>{
+    NSMutableArray *currentTasks;
+    NSMutableDictionary *tasksKeyPositionDict;
+}
 @property (weak, nonatomic) IBOutlet UITextField *taskTextField;
 @property (weak, nonatomic) IBOutlet UITableView *taskTableView;
-
+@property (strong, nonatomic, readwrite) NSMutableArray *currentTasks;
+@property (strong, nonatomic, readwrite) NSMutableDictionary *tasksKeyPositionDict;
 
 @end
 

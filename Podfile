@@ -9,7 +9,8 @@ target 'OPERR-iOS-ObjC-Quizz-RColon' do
   pod 'SVProgressHUD'
   pod 'Firebase/Core'
   pod 'Firebase/Database'
-
+  pod 'Toast'
+  
   target 'OPERR-iOS-ObjC-Quizz-RColonTests' do
     inherit! :search_paths
     # Pods for testing
