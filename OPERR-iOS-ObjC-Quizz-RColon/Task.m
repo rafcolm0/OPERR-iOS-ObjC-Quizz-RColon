@@ -44,4 +44,12 @@
     return dict;
 }
 
+-(BOOL)setMessageIfDiff:(NSString*)msg{
+    if(self.message != nil && msg != nil && ![message isEqualToString:msg]){
+        self.message = [NSString stringWithString:msg];
+        return true;
+    }
+    return false;
+}
+
 @end

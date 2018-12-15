@@ -59,10 +59,13 @@ static FirebaseManager *shared = nil;
         //normally when [snapshot exits] is false, we would send some error logging to Crashlytics and/or display a message if needed
     }];
     [self.dbRef observeEventType:FIRDataEventTypeChildRemoved withBlock:^(FIRDataSnapshot *snapshot) {
-       
+        
     }];
     [self.dbRef observeEventType:FIRDataEventTypeChildChanged withBlock:^(FIRDataSnapshot *snapshot) {
-        
+        if([snapshot exists]){  //if actual existent task data is found, handle it
+            Task *updatedTask = [[Task alloc] initWithFirebaseSnapshot:snapshot];
+            editedTask(updatedTask);
+        }
     }];
 }
 
@@ -98,6 +101,14 @@ static FirebaseManager *shared = nil;
     NSDictionary *dict = [newTask getFirebaseDictionaryReprensentation];
     //set node value for new task and call to completion handler
     [[self.dbRef child:newTask.taskId] setValue:dict withCompletionBlock:^(NSError *error, FIRDatabaseReference *ref) {
+        completionListener(error);
+    }];
+}
+
+- (void)modifyTask:(Task*)task withCompletion:(void(^)(NSError* error))completionListener{
+    NSDictionary *dict = [task getFirebaseDictionaryReprensentation];
+    //set node value for new task and call to completion handler
+    [[self.dbRef child:task.taskId] setValue:dict withCompletionBlock:^(NSError *error, FIRDatabaseReference *ref) {
         completionListener(error);
     }];
 }

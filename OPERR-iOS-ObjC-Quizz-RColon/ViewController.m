@@ -11,6 +11,7 @@
 #import "FirebaseManager.h"
 #import "Task.h"
 #import <Toast/Toast.h>
+#import "EditTaskViewController.h"
 
 @interface ViewController ()
 
@@ -56,8 +57,8 @@
     [[FirebaseManager sharedInstance] initializeTaskFirebaseObservers:^(Task* newTask){  //callback for new task added
         //if statement below is needed for METHOD 2: prevents duplicate tasks from been listed when viewDidLoad is called
         if([self.tasksKeyPositionDict valueForKey:newTask.taskId] == nil){
-            NSInteger index = self.currentTasks.count-1;  //new task position is always last
             [self.currentTasks addObject:newTask];  //add task to data sources and tableview
+            NSInteger index = self.currentTasks.count-1;  //new task position is always last
             [self.tasksKeyPositionDict setValue:[NSNumber numberWithInteger:index] forKey:newTask.taskId];
             [self.taskTableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:self.currentTasks.count - 1 inSection:0]] withRowAnimation:UITableViewRowAnimationAutomatic];
         }
@@ -73,7 +74,7 @@
         //get tableview position for editedTask
         NSNumber *position = [self.tasksKeyPositionDict valueForKey:editedTask.taskId];
         if(position != nil){ //if task with id found, replace it with editedTask
-            [self.currentTasks replaceObjectAtIndex:position.integerValue withObject:editedTask];
+            [self.currentTasks replaceObjectAtIndex:position.intValue withObject:editedTask];
             [self.taskTableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:position.integerValue inSection:0]] withRowAnimation: UITableViewRowAnimationNone];
         }
     }];
@@ -117,6 +118,17 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.currentTasks != nil ? self.currentTasks.count : 0;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self performSegueWithIdentifier:@"showEditTaskView" sender:indexPath];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"showEditTaskView"]){
+        EditTaskViewController *editTaskVC = (EditTaskViewController*) segue.destinationViewController;
+        editTaskVC.task = [self.currentTasks objectAtIndex:((NSIndexPath*)sender).row];
+    }
 }
 
 @end

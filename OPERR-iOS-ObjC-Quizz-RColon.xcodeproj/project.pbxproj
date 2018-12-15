@@ -27,6 +27,9 @@
 		51F8C61F21C54EC00075BA6D /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F8C61E21C54EC00075BA6D /* Task.m */; };
 		51F8C62021C54EC00075BA6D /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F8C61E21C54EC00075BA6D /* Task.m */; };
 		51F8C62121C54EC00075BA6D /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F8C61E21C54EC00075BA6D /* Task.m */; };
+		51F8C62421C598350075BA6D /* EditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F8C62321C598350075BA6D /* EditTaskViewController.m */; };
+		51F8C62521C598350075BA6D /* EditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F8C62321C598350075BA6D /* EditTaskViewController.m */; };
+		51F8C62621C598350075BA6D /* EditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F8C62321C598350075BA6D /* EditTaskViewController.m */; };
 		A7A42F3E4057C3B27053F421 /* libPods-OPERR-iOS-ObjC-Quizz-RColon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 891EE2719D02F5D50C5B507B /* libPods-OPERR-iOS-ObjC-Quizz-RColon.a */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +74,8 @@
 		5130A0BC21C4832B00AA9C11 /* FirebaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirebaseManager.h; sourceTree = "<group>"; };
 		51F8C61D21C54DF20075BA6D /* Task.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
 		51F8C61E21C54EC00075BA6D /* Task.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		51F8C62321C598350075BA6D /* EditTaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditTaskViewController.m; sourceTree = "<group>"; };
+		51F8C62721C598570075BA6D /* EditTaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditTaskViewController.h; sourceTree = "<group>"; };
 		53FD5B681F54006839FA819A /* libPods-OPERR-iOS-ObjC-Quizz-RColonUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OPERR-iOS-ObjC-Quizz-RColonUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D02A59505496F2F4381DEE /* Pods-OPERR-iOS-ObjC-Quizz-RColon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPERR-iOS-ObjC-Quizz-RColon.release.xcconfig"; path = "Pods/Target Support Files/Pods-OPERR-iOS-ObjC-Quizz-RColon/Pods-OPERR-iOS-ObjC-Quizz-RColon.release.xcconfig"; sourceTree = "<group>"; };
 		793F0B63D492A91B39FE5BB5 /* Pods-OPERR-iOS-ObjC-Quizz-RColonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPERR-iOS-ObjC-Quizz-RColonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OPERR-iOS-ObjC-Quizz-RColonTests/Pods-OPERR-iOS-ObjC-Quizz-RColonTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +154,8 @@
 				5130A0BC21C4832B00AA9C11 /* FirebaseManager.h */,
 				51F8C61D21C54DF20075BA6D /* Task.h */,
 				51F8C61E21C54EC00075BA6D /* Task.m */,
+				51F8C62321C598350075BA6D /* EditTaskViewController.m */,
+				51F8C62721C598570075BA6D /* EditTaskViewController.h */,
 			);
 			path = "OPERR-iOS-ObjC-Quizz-RColon";
 			sourceTree = "<group>";
@@ -426,6 +433,7 @@
 				5130A08A21C47CC200AA9C11 /* OPERR_iOS_ObjC_Quizz_RColon.xcdatamodeld in Sources */,
 				5130A0B921C4831100AA9C11 /* FirebaseManager.m in Sources */,
 				5130A09221C47CC400AA9C11 /* main.m in Sources */,
+				51F8C62421C598350075BA6D /* EditTaskViewController.m in Sources */,
 				51F8C61F21C54EC00075BA6D /* Task.m in Sources */,
 				5130A08121C47CC200AA9C11 /* AppDelegate.m in Sources */,
 			);
@@ -438,6 +446,7 @@
 				5130A0BA21C4831100AA9C11 /* FirebaseManager.m in Sources */,
 				51F8C62021C54EC00075BA6D /* Task.m in Sources */,
 				5130A09C21C47CC400AA9C11 /* OPERR_iOS_ObjC_Quizz_RColonTests.m in Sources */,
+				51F8C62521C598350075BA6D /* EditTaskViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +457,7 @@
 				5130A0BB21C4831100AA9C11 /* FirebaseManager.m in Sources */,
 				51F8C62121C54EC00075BA6D /* Task.m in Sources */,
 				5130A0A721C47CC400AA9C11 /* OPERR_iOS_ObjC_Quizz_RColonUITests.m in Sources */,
+				51F8C62621C598350075BA6D /* EditTaskViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
