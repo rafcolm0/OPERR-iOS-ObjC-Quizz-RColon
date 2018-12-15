@@ -18,6 +18,7 @@
 @end
 
 @implementation ViewController
+static int editingTaskIndex = -1;
 @synthesize currentTasks, tasksKeyPositionDict;
 
 /*
@@ -62,21 +63,17 @@
             [self.tasksKeyPositionDict setValue:[NSNumber numberWithInteger:index] forKey:newTask.taskId];
             [self.taskTableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:self.currentTasks.count - 1 inSection:0]] withRowAnimation:UITableViewRowAnimationAutomatic];
         }
-    } deletedTaskListener:^(NSString* deletedTaskId){  //callback for when a task is deleted
-        //get tableview position for task with id deletedTaskId from datasource dictionary
-        NSNumber *position = [self.tasksKeyPositionDict valueForKey:deletedTaskId];
-        if(position != nil){  //if task with id found, delete it
-            [self.currentTasks removeObjectAtIndex:position.integerValue];
-            [self.taskTableView deleteRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:position.intValue inSection:0]]
+    } deletedTaskListener:^(Task* deletedTask){  //callback for when a task is deleted
+        //using static variable to determine indexPath of task been deleted
+        //NOTE: For the purpose of this exercise, this approach using static variable only works for deletions made locally on the device.  Deletions triggerred directly from Firebase cloud won't obviously match local static indexPath.  In that case, a more eleborate mapping mechanism is needed to match Firebase modifications/deletions locally.
+        [self.currentTasks removeObjectAtIndex:editingTaskIndex];
+        [self.taskTableView deleteRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:editingTaskIndex inSection:0]]
                                       withRowAnimation:UITableViewRowAnimationAutomatic];
-        }
     } editedTaskListener:^(Task* editedTask){  //callback for when a task is modified
-        //get tableview position for editedTask
-        NSNumber *position = [self.tasksKeyPositionDict valueForKey:editedTask.taskId];
-        if(position != nil){ //if task with id found, replace it with editedTask
-            [self.currentTasks replaceObjectAtIndex:position.intValue withObject:editedTask];
-            [self.taskTableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:position.integerValue inSection:0]] withRowAnimation: UITableViewRowAnimationNone];
-        }
+        //using static variable to determine indexPath of task been edited
+        //NOTE: For the purpose of this exercise, this approach using static variable only works for deletions made locally on the device.  Deletions triggerred directly from Firebase cloud won't obviously match local static indexPath.  In that case, a more eleborate mapping mechanism is needed to match Firebase modifications/deletions locally.
+        [self.currentTasks replaceObjectAtIndex:editingTaskIndex withObject:editedTask];
+        [self.taskTableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:editingTaskIndex inSection:0]] withRowAnimation: UITableViewRowAnimationNone];
     }];
 }
 
@@ -126,8 +123,9 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([segue.identifier isEqualToString:@"showEditTaskView"]){
+        editingTaskIndex = (int) ((NSIndexPath*)sender).row;
         EditTaskViewController *editTaskVC = (EditTaskViewController*) segue.destinationViewController;
-        editTaskVC.task = [self.currentTasks objectAtIndex:((NSIndexPath*)sender).row];
+        editTaskVC.task = [self.currentTasks objectAtIndex:editingTaskIndex];
     }
 }
 

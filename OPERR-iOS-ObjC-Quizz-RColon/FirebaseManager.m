@@ -49,7 +49,7 @@ static FirebaseManager *shared = nil;
 }
 
 - (void)initializeTaskFirebaseObservers:(void(^)(Task* newTask))newTaskListener
-                    deletedTaskListener:(void(^)(NSString* taskId))deletedTask
+                    deletedTaskListener:(void(^)(Task* deletedTask))deletedTask
                      editedTaskListener:(void(^)(Task* editedTask))editedTask{
     [self.dbRef observeEventType:FIRDataEventTypeChildAdded withBlock:^(FIRDataSnapshot *snapshot) {
         if([snapshot exists]){  //if actual existent task data is found, handle it
@@ -59,7 +59,8 @@ static FirebaseManager *shared = nil;
         //normally when [snapshot exits] is false, we would send some error logging to Crashlytics and/or display a message if needed
     }];
     [self.dbRef observeEventType:FIRDataEventTypeChildRemoved withBlock:^(FIRDataSnapshot *snapshot) {
-        deletedTask(snapshot.key);  //just pass key to delete callback
+        Task *task = [[Task alloc] initWithFirebaseSnapshot:snapshot];
+        deletedTask(task);
     }];
     [self.dbRef observeEventType:FIRDataEventTypeChildChanged withBlock:^(FIRDataSnapshot *snapshot) {
         if([snapshot exists]){  //if actual existent task data is found, handle it

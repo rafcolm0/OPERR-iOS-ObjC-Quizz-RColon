@@ -39,7 +39,7 @@ extern NSString *const NODE_TASKID;
  @param editedTask callback for when a task was modified
  */
 - (void)initializeTaskFirebaseObservers:(void(^)(Task* newTask))newTaskListener
-                    deletedTaskListener:(void(^)(NSString* taskId))deletedTask
+                    deletedTaskListener:(void(^)(Task* deletedTask))deletedTask
                     editedTaskListener:(void(^)(Task* editedTask))editedTask;
 
 /**
