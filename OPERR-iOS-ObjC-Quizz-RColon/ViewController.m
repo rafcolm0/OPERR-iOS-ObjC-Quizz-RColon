@@ -65,13 +65,17 @@ static int editingTaskIndex = -1;
         }
     } deletedTaskListener:^(Task* deletedTask){  //callback for when a task is deleted
         //using static variable to determine indexPath of task been deleted
-        //NOTE: For the purpose of this exercise, this approach using static variable only works for deletions made locally on the device.  Deletions triggerred directly from Firebase cloud won't obviously match local static indexPath.  In that case, a more eleborate mapping mechanism is needed to match Firebase modifications/deletions locally.
+        /*
+         NOTE: For the purpose of this exercise, as the instructions specified only adding tasks remotely and not editing/deleting, this approach of using static variable only works for deletions made locally on the device.  Deletions triggerred directly from Firebase cloud won't obviously match local static indexPath.  In that case, a more eleborate mapping mechanism is needed to match Firebase modifications/deletions locally.
+         */
         [self.currentTasks removeObjectAtIndex:editingTaskIndex];
         [self.taskTableView deleteRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:editingTaskIndex inSection:0]]
                                       withRowAnimation:UITableViewRowAnimationAutomatic];
     } editedTaskListener:^(Task* editedTask){  //callback for when a task is modified
         //using static variable to determine indexPath of task been edited
-        //NOTE: For the purpose of this exercise, this approach using static variable only works for deletions made locally on the device.  Deletions triggerred directly from Firebase cloud won't obviously match local static indexPath.  In that case, a more eleborate mapping mechanism is needed to match Firebase modifications/deletions locally.
+        /*
+         NOTE: For the purpose of this exercise, as the instructions specified only adding tasks remotely and not editing/deleting, this approach of using static variable only works for deletions made locally on the device.  Deletions triggerred directly from Firebase cloud won't obviously match local static indexPath.  In that case, a more eleborate mapping mechanism is needed to match Firebase modifications/deletions locally.
+         */
         [self.currentTasks replaceObjectAtIndex:editingTaskIndex withObject:editedTask];
         [self.taskTableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:editingTaskIndex inSection:0]] withRowAnimation: UITableViewRowAnimationNone];
     }];
