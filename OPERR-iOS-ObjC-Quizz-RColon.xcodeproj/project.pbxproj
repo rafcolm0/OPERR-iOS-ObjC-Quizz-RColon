@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09A621C2DC074C17B57B23DC /* libPods-OPERR-iOS-ObjC-Quizz-RColonUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53FD5B681F54006839FA819A /* libPods-OPERR-iOS-ObjC-Quizz-RColonUITests.a */; };
+		274025CE7055951F7FFAC249 /* libPods-OPERR-iOS-ObjC-Quizz-RColonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5AA10FFEB177485E034F2A /* libPods-OPERR-iOS-ObjC-Quizz-RColonTests.a */; };
+		5130A08121C47CC200AA9C11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130A08021C47CC200AA9C11 /* AppDelegate.m */; };
+		5130A08421C47CC200AA9C11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130A08321C47CC200AA9C11 /* ViewController.m */; };
+		5130A08721C47CC200AA9C11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5130A08521C47CC200AA9C11 /* Main.storyboard */; };
+		5130A08A21C47CC200AA9C11 /* OPERR_iOS_ObjC_Quizz_RColon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5130A08821C47CC200AA9C11 /* OPERR_iOS_ObjC_Quizz_RColon.xcdatamodeld */; };
+		5130A08C21C47CC400AA9C11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5130A08B21C47CC400AA9C11 /* Assets.xcassets */; };
+		5130A08F21C47CC400AA9C11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5130A08D21C47CC400AA9C11 /* LaunchScreen.storyboard */; };
+		5130A09221C47CC400AA9C11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130A09121C47CC400AA9C11 /* main.m */; };
+		5130A09C21C47CC400AA9C11 /* OPERR_iOS_ObjC_Quizz_RColonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130A09B21C47CC400AA9C11 /* OPERR_iOS_ObjC_Quizz_RColonTests.m */; };
+		5130A0A721C47CC400AA9C11 /* OPERR_iOS_ObjC_Quizz_RColonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130A0A621C47CC400AA9C11 /* OPERR_iOS_ObjC_Quizz_RColonUITests.m */; };
+		5130A0B521C482A300AA9C11 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5130A0B421C482A300AA9C11 /* GoogleService-Info.plist */; };
+		5130A0B621C482A300AA9C11 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5130A0B421C482A300AA9C11 /* GoogleService-Info.plist */; };
+		5130A0B721C482A300AA9C11 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5130A0B421C482A300AA9C11 /* GoogleService-Info.plist */; };
+		5130A0B921C4831100AA9C11 /* FirebaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130A0B821C4831100AA9C11 /* FirebaseManager.m */; };
+		5130A0BA21C4831100AA9C11 /* FirebaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130A0B821C4831100AA9C11 /* FirebaseManager.m */; };
+		5130A0BB21C4831100AA9C11 /* FirebaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5130A0B821C4831100AA9C11 /* FirebaseManager.m */; };
+		A7A42F3E4057C3B27053F421 /* libPods-OPERR-iOS-ObjC-Quizz-RColon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 891EE2719D02F5D50C5B507B /* libPods-OPERR-iOS-ObjC-Quizz-RColon.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5130A09821C47CC400AA9C11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5130A07421C47CC200AA9C11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5130A07B21C47CC200AA9C11;
+			remoteInfo = "OPERR-iOS-ObjC-Quizz-RColon";
+		};
+		5130A0A321C47CC400AA9C11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5130A07421C47CC200AA9C11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5130A07B21C47CC200AA9C11;
+			remoteInfo = "OPERR-iOS-ObjC-Quizz-RColon";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C5AA10FFEB177485E034F2A /* libPods-OPERR-iOS-ObjC-Quizz-RColonTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OPERR-iOS-ObjC-Quizz-RColonTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5130A07C21C47CC200AA9C11 /* OPERR-iOS-ObjC-Quizz-RColon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OPERR-iOS-ObjC-Quizz-RColon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5130A07F21C47CC200AA9C11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5130A08021C47CC200AA9C11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5130A08221C47CC200AA9C11 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5130A08321C47CC200AA9C11 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5130A08621C47CC200AA9C11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5130A08921C47CC200AA9C11 /* OPERR_iOS_ObjC_Quizz_RColon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OPERR_iOS_ObjC_Quizz_RColon.xcdatamodel; sourceTree = "<group>"; };
+		5130A08B21C47CC400AA9C11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5130A08E21C47CC400AA9C11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5130A09021C47CC400AA9C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5130A09121C47CC400AA9C11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5130A09721C47CC400AA9C11 /* OPERR-iOS-ObjC-Quizz-RColonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OPERR-iOS-ObjC-Quizz-RColonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5130A09B21C47CC400AA9C11 /* OPERR_iOS_ObjC_Quizz_RColonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OPERR_iOS_ObjC_Quizz_RColonTests.m; sourceTree = "<group>"; };
+		5130A09D21C47CC400AA9C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5130A0A221C47CC400AA9C11 /* OPERR-iOS-ObjC-Quizz-RColonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OPERR-iOS-ObjC-Quizz-RColonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5130A0A621C47CC400AA9C11 /* OPERR_iOS_ObjC_Quizz_RColonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OPERR_iOS_ObjC_Quizz_RColonUITests.m; sourceTree = "<group>"; };
+		5130A0A821C47CC400AA9C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5130A0B421C482A300AA9C11 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5130A0B821C4831100AA9C11 /* FirebaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirebaseManager.m; sourceTree = "<group>"; };
+		5130A0BC21C4832B00AA9C11 /* FirebaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirebaseManager.h; sourceTree = "<group>"; };
+		53FD5B681F54006839FA819A /* libPods-OPERR-iOS-ObjC-Quizz-RColonUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OPERR-iOS-ObjC-Quizz-RColonUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70D02A59505496F2F4381DEE /* Pods-OPERR-iOS-ObjC-Quizz-RColon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPERR-iOS-ObjC-Quizz-RColon.release.xcconfig"; path = "Pods/Target Support Files/Pods-OPERR-iOS-ObjC-Quizz-RColon/Pods-OPERR-iOS-ObjC-Quizz-RColon.release.xcconfig"; sourceTree = "<group>"; };
+		793F0B63D492A91B39FE5BB5 /* Pods-OPERR-iOS-ObjC-Quizz-RColonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPERR-iOS-ObjC-Quizz-RColonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OPERR-iOS-ObjC-Quizz-RColonTests/Pods-OPERR-iOS-ObjC-Quizz-RColonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		891EE2719D02F5D50C5B507B /* libPods-OPERR-iOS-ObjC-Quizz-RColon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OPERR-iOS-ObjC-Quizz-RColon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6284A74A762CC8A60D11B34 /* Pods-OPERR-iOS-ObjC-Quizz-RColonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPERR-iOS-ObjC-Quizz-RColonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OPERR-iOS-ObjC-Quizz-RColonTests/Pods-OPERR-iOS-ObjC-Quizz-RColonTests.release.xcconfig"; sourceTree = "<group>"; };
+		A767DFC04D2F52BBCDE908C1 /* Pods-OPERR-iOS-ObjC-Quizz-RColon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPERR-iOS-ObjC-Quizz-RColon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OPERR-iOS-ObjC-Quizz-RColon/Pods-OPERR-iOS-ObjC-Quizz-RColon.debug.xcconfig"; sourceTree = "<group>"; };
+		BAA40CC066D31BCEED8D492C /* Pods-OPERR-iOS-ObjC-Quizz-RColonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPERR-iOS-ObjC-Quizz-RColonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OPERR-iOS-ObjC-Quizz-RColonUITests/Pods-OPERR-iOS-ObjC-Quizz-RColonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DAE2D0C13C1E58D60F8B5BA6 /* Pods-OPERR-iOS-ObjC-Quizz-RColonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPERR-iOS-ObjC-Quizz-RColonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OPERR-iOS-ObjC-Quizz-RColonUITests/Pods-OPERR-iOS-ObjC-Quizz-RColonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5130A07921C47CC200AA9C11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7A42F3E4057C3B27053F421 /* libPods-OPERR-iOS-ObjC-Quizz-RColon.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5130A09421C47CC400AA9C11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274025CE7055951F7FFAC249 /* libPods-OPERR-iOS-ObjC-Quizz-RColonTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5130A09F21C47CC400AA9C11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09A621C2DC074C17B57B23DC /* libPods-OPERR-iOS-ObjC-Quizz-RColonUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5130A07321C47CC200AA9C11 = {
+			isa = PBXGroup;
+			children = (
+				5130A07E21C47CC200AA9C11 /* OPERR-iOS-ObjC-Quizz-RColon */,
+				5130A09A21C47CC400AA9C11 /* OPERR-iOS-ObjC-Quizz-RColonTests */,
+				5130A0A521C47CC400AA9C11 /* OPERR-iOS-ObjC-Quizz-RColonUITests */,
+				5130A07D21C47CC200AA9C11 /* Products */,
+				F8C9BC69700F55A98E713FD7 /* Pods */,
+				B450372FDC673622A264818B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5130A07D21C47CC200AA9C11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5130A07C21C47CC200AA9C11 /* OPERR-iOS-ObjC-Quizz-RColon.app */,
+				5130A09721C47CC400AA9C11 /* OPERR-iOS-ObjC-Quizz-RColonTests.xctest */,
+				5130A0A221C47CC400AA9C11 /* OPERR-iOS-ObjC-Quizz-RColonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5130A07E21C47CC200AA9C11 /* OPERR-iOS-ObjC-Quizz-RColon */ = {
+			isa = PBXGroup;
+			children = (
+				5130A07F21C47CC200AA9C11 /* AppDelegate.h */,
+				5130A08021C47CC200AA9C11 /* AppDelegate.m */,
+				5130A08221C47CC200AA9C11 /* ViewController.h */,
+				5130A08321C47CC200AA9C11 /* ViewController.m */,
+				5130A08521C47CC200AA9C11 /* Main.storyboard */,
+				5130A08B21C47CC400AA9C11 /* Assets.xcassets */,
+				5130A08D21C47CC400AA9C11 /* LaunchScreen.storyboard */,
+				5130A09021C47CC400AA9C11 /* Info.plist */,
+				5130A0B421C482A300AA9C11 /* GoogleService-Info.plist */,
+				5130A09121C47CC400AA9C11 /* main.m */,
+				5130A08821C47CC200AA9C11 /* OPERR_iOS_ObjC_Quizz_RColon.xcdatamodeld */,
+				5130A0B821C4831100AA9C11 /* FirebaseManager.m */,
+				5130A0BC21C4832B00AA9C11 /* FirebaseManager.h */,
+			);
+			path = "OPERR-iOS-ObjC-Quizz-RColon";
+			sourceTree = "<group>";
+		};
+		5130A09A21C47CC400AA9C11 /* OPERR-iOS-ObjC-Quizz-RColonTests */ = {
+			isa = PBXGroup;
+			children = (
+				5130A09B21C47CC400AA9C11 /* OPERR_iOS_ObjC_Quizz_RColonTests.m */,
+				5130A09D21C47CC400AA9C11 /* Info.plist */,
+			);
+			path = "OPERR-iOS-ObjC-Quizz-RColonTests";
+			sourceTree = "<group>";
+		};
+		5130A0A521C47CC400AA9C11 /* OPERR-iOS-ObjC-Quizz-RColonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5130A0A621C47CC400AA9C11 /* OPERR_iOS_ObjC_Quizz_RColonUITests.m */,
+				5130A0A821C47CC400AA9C11 /* Info.plist */,
+			);
+			path = "OPERR-iOS-ObjC-Quizz-RColonUITests";
+			sourceTree = "<group>";
+		};
+		B450372FDC673622A264818B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				891EE2719D02F5D50C5B507B /* libPods-OPERR-iOS-ObjC-Quizz-RColon.a */,
+				2C5AA10FFEB177485E034F2A /* libPods-OPERR-iOS-ObjC-Quizz-RColonTests.a */,
+				53FD5B681F54006839FA819A /* libPods-OPERR-iOS-ObjC-Quizz-RColonUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8C9BC69700F55A98E713FD7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A767DFC04D2F52BBCDE908C1 /* Pods-OPERR-iOS-ObjC-Quizz-RColon.debug.xcconfig */,
+				70D02A59505496F2F4381DEE /* Pods-OPERR-iOS-ObjC-Quizz-RColon.release.xcconfig */,
+				793F0B63D492A91B39FE5BB5 /* Pods-OPERR-iOS-ObjC-Quizz-RColonTests.debug.xcconfig */,
+				A6284A74A762CC8A60D11B34 /* Pods-OPERR-iOS-ObjC-Quizz-RColonTests.release.xcconfig */,
+				DAE2D0C13C1E58D60F8B5BA6 /* Pods-OPERR-iOS-ObjC-Quizz-RColonUITests.debug.xcconfig */,
+				BAA40CC066D31BCEED8D492C /* Pods-OPERR-iOS-ObjC-Quizz-RColonUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5130A07B21C47CC200AA9C11 /* OPERR-iOS-ObjC-Quizz-RColon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5130A0AB21C47CC400AA9C11 /* Build configuration list for PBXNativeTarget "OPERR-iOS-ObjC-Quizz-RColon" */;
+			buildPhases = (
+				8DA78CA119E7FC2269AA0C56 /* [CP] Check Pods Manifest.lock */,
+				5130A07821C47CC200AA9C11 /* Sources */,
+				5130A07921C47CC200AA9C11 /* Frameworks */,
+				5130A07A21C47CC200AA9C11 /* Resources */,
+				4DF51E44B90929F8A5BB144E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OPERR-iOS-ObjC-Quizz-RColon";
+			productName = "OPERR-iOS-ObjC-Quizz-RColon";
+			productReference = 5130A07C21C47CC200AA9C11 /* OPERR-iOS-ObjC-Quizz-RColon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5130A09621C47CC400AA9C11 /* OPERR-iOS-ObjC-Quizz-RColonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5130A0AE21C47CC400AA9C11 /* Build configuration list for PBXNativeTarget "OPERR-iOS-ObjC-Quizz-RColonTests" */;
+			buildPhases = (
+				F1F5732358963F93B8CA505C /* [CP] Check Pods Manifest.lock */,
+				5130A09321C47CC400AA9C11 /* Sources */,
+				5130A09421C47CC400AA9C11 /* Frameworks */,
+				5130A09521C47CC400AA9C11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5130A09921C47CC400AA9C11 /* PBXTargetDependency */,
+			);
+			name = "OPERR-iOS-ObjC-Quizz-RColonTests";
+			productName = "OPERR-iOS-ObjC-Quizz-RColonTests";
+			productReference = 5130A09721C47CC400AA9C11 /* OPERR-iOS-ObjC-Quizz-RColonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5130A0A121C47CC400AA9C11 /* OPERR-iOS-ObjC-Quizz-RColonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5130A0B121C47CC400AA9C11 /* Build configuration list for PBXNativeTarget "OPERR-iOS-ObjC-Quizz-RColonUITests" */;
+			buildPhases = (
+				74FDF8469A0AFC40D3953FE2 /* [CP] Check Pods Manifest.lock */,
+				5130A09E21C47CC400AA9C11 /* Sources */,
+				5130A09F21C47CC400AA9C11 /* Frameworks */,
+				5130A0A021C47CC400AA9C11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5130A0A421C47CC400AA9C11 /* PBXTargetDependency */,
+			);
+			name = "OPERR-iOS-ObjC-Quizz-RColonUITests";
+			productName = "OPERR-iOS-ObjC-Quizz-RColonUITests";
+			productReference = 5130A0A221C47CC400AA9C11 /* OPERR-iOS-ObjC-Quizz-RColonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5130A07421C47CC200AA9C11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = rafaelColon;
+				TargetAttributes = {
+					5130A07B21C47CC200AA9C11 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					5130A09621C47CC400AA9C11 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5130A07B21C47CC200AA9C11;
+					};
+					5130A0A121C47CC400AA9C11 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5130A07B21C47CC200AA9C11;
+					};
+				};
+			};
+			buildConfigurationList = 5130A07721C47CC200AA9C11 /* Build configuration list for PBXProject "OPERR-iOS-ObjC-Quizz-RColon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5130A07321C47CC200AA9C11;
+			productRefGroup = 5130A07D21C47CC200AA9C11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5130A07B21C47CC200AA9C11 /* OPERR-iOS-ObjC-Quizz-RColon */,
+				5130A09621C47CC400AA9C11 /* OPERR-iOS-ObjC-Quizz-RColonTests */,
+				5130A0A121C47CC400AA9C11 /* OPERR-iOS-ObjC-Quizz-RColonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5130A07A21C47CC200AA9C11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5130A08F21C47CC400AA9C11 /* LaunchScreen.storyboard in Resources */,
+				5130A0B521C482A300AA9C11 /* GoogleService-Info.plist in Resources */,
+				5130A08C21C47CC400AA9C11 /* Assets.xcassets in Resources */,
+				5130A08721C47CC200AA9C11 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5130A09521C47CC400AA9C11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5130A0B621C482A300AA9C11 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5130A0A021C47CC400AA9C11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5130A0B721C482A300AA9C11 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DF51E44B90929F8A5BB144E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OPERR-iOS-ObjC-Quizz-RColon/Pods-OPERR-iOS-ObjC-Quizz-RColon-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OPERR-iOS-ObjC-Quizz-RColon/Pods-OPERR-iOS-ObjC-Quizz-RColon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74FDF8469A0AFC40D3953FE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OPERR-iOS-ObjC-Quizz-RColonUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DA78CA119E7FC2269AA0C56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OPERR-iOS-ObjC-Quizz-RColon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1F5732358963F93B8CA505C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OPERR-iOS-ObjC-Quizz-RColonTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5130A07821C47CC200AA9C11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5130A08421C47CC200AA9C11 /* ViewController.m in Sources */,
+				5130A08A21C47CC200AA9C11 /* OPERR_iOS_ObjC_Quizz_RColon.xcdatamodeld in Sources */,
+				5130A0B921C4831100AA9C11 /* FirebaseManager.m in Sources */,
+				5130A09221C47CC400AA9C11 /* main.m in Sources */,
+				5130A08121C47CC200AA9C11 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5130A09321C47CC400AA9C11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5130A0BA21C4831100AA9C11 /* FirebaseManager.m in Sources */,
+				5130A09C21C47CC400AA9C11 /* OPERR_iOS_ObjC_Quizz_RColonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5130A09E21C47CC400AA9C11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5130A0BB21C4831100AA9C11 /* FirebaseManager.m in Sources */,
+				5130A0A721C47CC400AA9C11 /* OPERR_iOS_ObjC_Quizz_RColonUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5130A09921C47CC400AA9C11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5130A07B21C47CC200AA9C11 /* OPERR-iOS-ObjC-Quizz-RColon */;
+			targetProxy = 5130A09821C47CC400AA9C11 /* PBXContainerItemProxy */;
+		};
+		5130A0A421C47CC400AA9C11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5130A07B21C47CC200AA9C11 /* OPERR-iOS-ObjC-Quizz-RColon */;
+			targetProxy = 5130A0A321C47CC400AA9C11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5130A08521C47CC200AA9C11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5130A08621C47CC200AA9C11 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5130A08D21C47CC400AA9C11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5130A08E21C47CC400AA9C11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5130A0A921C47CC400AA9C11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5130A0AA21C47CC400AA9C11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5130A0AC21C47CC400AA9C11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A767DFC04D2F52BBCDE908C1 /* Pods-OPERR-iOS-ObjC-Quizz-RColon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4PF645YZ5;
+				INFOPLIST_FILE = "OPERR-iOS-ObjC-Quizz-RColon/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rafaelColon.OPERR-iOS-ObjC-Quizz-RColon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5130A0AD21C47CC400AA9C11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70D02A59505496F2F4381DEE /* Pods-OPERR-iOS-ObjC-Quizz-RColon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4PF645YZ5;
+				INFOPLIST_FILE = "OPERR-iOS-ObjC-Quizz-RColon/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rafaelColon.OPERR-iOS-ObjC-Quizz-RColon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5130A0AF21C47CC400AA9C11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 793F0B63D492A91B39FE5BB5 /* Pods-OPERR-iOS-ObjC-Quizz-RColonTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4PF645YZ5;
+				INFOPLIST_FILE = "OPERR-iOS-ObjC-Quizz-RColonTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rafaelColon.OPERR-iOS-ObjC-Quizz-RColonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OPERR-iOS-ObjC-Quizz-RColon.app/OPERR-iOS-ObjC-Quizz-RColon";
+			};
+			name = Debug;
+		};
+		5130A0B021C47CC400AA9C11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6284A74A762CC8A60D11B34 /* Pods-OPERR-iOS-ObjC-Quizz-RColonTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4PF645YZ5;
+				INFOPLIST_FILE = "OPERR-iOS-ObjC-Quizz-RColonTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rafaelColon.OPERR-iOS-ObjC-Quizz-RColonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OPERR-iOS-ObjC-Quizz-RColon.app/OPERR-iOS-ObjC-Quizz-RColon";
+			};
+			name = Release;
+		};
+		5130A0B221C47CC400AA9C11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAE2D0C13C1E58D60F8B5BA6 /* Pods-OPERR-iOS-ObjC-Quizz-RColonUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4PF645YZ5;
+				INFOPLIST_FILE = "OPERR-iOS-ObjC-Quizz-RColonUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rafaelColon.OPERR-iOS-ObjC-Quizz-RColonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OPERR-iOS-ObjC-Quizz-RColon";
+			};
+			name = Debug;
+		};
+		5130A0B321C47CC400AA9C11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAA40CC066D31BCEED8D492C /* Pods-OPERR-iOS-ObjC-Quizz-RColonUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4PF645YZ5;
+				INFOPLIST_FILE = "OPERR-iOS-ObjC-Quizz-RColonUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rafaelColon.OPERR-iOS-ObjC-Quizz-RColonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OPERR-iOS-ObjC-Quizz-RColon";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5130A07721C47CC200AA9C11 /* Build configuration list for PBXProject "OPERR-iOS-ObjC-Quizz-RColon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5130A0A921C47CC400AA9C11 /* Debug */,
+				5130A0AA21C47CC400AA9C11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5130A0AB21C47CC400AA9C11 /* Build configuration list for PBXNativeTarget "OPERR-iOS-ObjC-Quizz-RColon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5130A0AC21C47CC400AA9C11 /* Debug */,
+				5130A0AD21C47CC400AA9C11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5130A0AE21C47CC400AA9C11 /* Build configuration list for PBXNativeTarget "OPERR-iOS-ObjC-Quizz-RColonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5130A0AF21C47CC400AA9C11 /* Debug */,
+				5130A0B021C47CC400AA9C11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5130A0B121C47CC400AA9C11 /* Build configuration list for PBXNativeTarget "OPERR-iOS-ObjC-Quizz-RColonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5130A0B221C47CC400AA9C11 /* Debug */,
+				5130A0B321C47CC400AA9C11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5130A08821C47CC200AA9C11 /* OPERR_iOS_ObjC_Quizz_RColon.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5130A08921C47CC200AA9C11 /* OPERR_iOS_ObjC_Quizz_RColon.xcdatamodel */,
+			);
+			currentVersion = 5130A08921C47CC200AA9C11 /* OPERR_iOS_ObjC_Quizz_RColon.xcdatamodel */;
+			path = OPERR_iOS_ObjC_Quizz_RColon.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5130A07421C47CC200AA9C11 /* Project object */;
+}
