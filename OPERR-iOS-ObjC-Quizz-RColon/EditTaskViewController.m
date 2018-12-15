@@ -37,6 +37,19 @@
     }
 }
 
+- (IBAction)deleteBtnClicked:(id)sender {
+    [[FirebaseManager sharedInstance] deleteTask:self.task withCompletion:^(NSError* error){
+        if (error) {
+            NSLog(@"Task could not be deleted from Firebase: %@", error);
+            [self.view makeToast:@"Error deleting task!"];
+        } else {
+            [self dismissViewControllerAnimated:true completion:nil];
+        }
+    }];
+}
+
+
+
 - (IBAction)doneBtnClicked:(id)sender {
     [self dismissViewControllerAnimated:true completion:nil];
 }

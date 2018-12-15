@@ -62,5 +62,11 @@ extern NSString *const NODE_TASKID;
  */
 - (void)modifyTask:(Task*)task withCompletion:(void(^)(NSError* error))completionListener;
 
+/**
+ Deletes existing parameter task from Firebase
+ @param task Task to delete from Firebase
+ @param completionListener callback after task was deleted or if any error occurred
+ */
+- (void)deleteTask:(Task*)task withCompletion:(void(^)(NSError* error))completionListener;
 @end
 #endif /* FirebaseManager_h */

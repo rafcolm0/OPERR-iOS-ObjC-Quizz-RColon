@@ -135,6 +135,17 @@
                                     <outlet property="delegate" destination="cKc-7m-jR0" id="nLy-Bw-XEg"/>
                                 </connections>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwl-Os-xSe">
+                                <rect key="frame" x="162.5" y="35" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aUc-5L-Hck"/>
+                                    <constraint firstAttribute="width" constant="50" id="dAR-Ni-4MP"/>
+                                </constraints>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteBtnClicked:" destination="cKc-7m-jR0" eventType="touchUpInside" id="d5m-KX-eA8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -147,6 +158,8 @@
                             <constraint firstItem="4Vw-0L-HY7" firstAttribute="top" secondItem="dRC-t2-atz" secondAttribute="bottom" constant="15" id="SyH-10-hEs"/>
                             <constraint firstItem="GYd-WR-4fk" firstAttribute="leading" secondItem="LtX-8u-hYH" secondAttribute="leading" constant="15" id="gEs-0J-8br"/>
                             <constraint firstItem="LtX-8u-hYH" firstAttribute="trailing" secondItem="4Vw-0L-HY7" secondAttribute="trailing" constant="16" id="nSv-dh-Ldn"/>
+                            <constraint firstItem="lwl-Os-xSe" firstAttribute="centerX" secondItem="v1W-4N-AUu" secondAttribute="centerX" id="rRC-3U-E4S"/>
+                            <constraint firstItem="lwl-Os-xSe" firstAttribute="top" secondItem="LtX-8u-hYH" secondAttribute="top" constant="15" id="s80-fr-iGK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LtX-8u-hYH"/>
                     </view>
