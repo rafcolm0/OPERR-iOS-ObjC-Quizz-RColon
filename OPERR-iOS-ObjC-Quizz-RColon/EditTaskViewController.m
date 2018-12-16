@@ -19,6 +19,7 @@
 @synthesize task;
 
 - (void)viewDidLoad{
+    [super viewDidLoad];
     self.taskMessageTextView.text = self.task.message;
 }
 

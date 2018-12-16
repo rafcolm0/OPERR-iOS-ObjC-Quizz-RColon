@@ -1,6 +1,0 @@
-module Pods_OPERR_iOS_ObjC_Quizz_RColon {
-  umbrella header "Pods-OPERR-iOS-ObjC-Quizz-RColon-umbrella.h"
-
-  export *
-  module * { export * }
-}
